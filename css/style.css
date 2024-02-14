@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Syne", sans-serif;
+  font-optical-sizing: auto;
+  background-color: #fefefe;
+  overflow-x: hidden;
+}
+
+.hide {
+  display: none !important;
+}
+
+.nav-transform {
+  transform: translateX(-100%);
+}
+
+.arrow-animation {
+  padding-right: 0.5rem;
+  font-size: 2.5rem !important;
+}
+
+.width-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw !important;
+}
+
+.burger-icon {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  width: 3rem;
+  height: 3rem;
+  margin: 2rem;
+  margin-left: 3rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+.burger-icon .line {
+  width: 2rem;
+  height: 0.1rem;
+  background-color: #272626;
+}
+.burger-icon .medium-l {
+  width: 1.6rem;
+}
+.burger-icon .small-l {
+  width: 1.2rem;
+}
+
+nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 25rem;
+  padding: 2rem 3rem;
+  background-color: rgb(23, 23, 24);
+  transform: translateX(0);
+  transition: transform 0.3s;
+}
+nav .line {
+  width: 2rem;
+  height: 0.1rem;
+  background-color: #fefefe;
+}
+nav .x-icon {
+  width: 3rem;
+  height: 3rem;
+  padding: 1rem;
+  padding-top: 1.7rem;
+  cursor: pointer;
+}
+nav .x-icon .line-1 {
+  transform: rotate(45deg);
+}
+nav .x-icon .line-2 {
+  transform: rotate(135deg) translateY(0.1rem);
+}
+nav h1 {
+  color: #fefefe;
+  padding: 0.5rem;
+  padding-top: 2rem;
+  font-size: 2.7rem;
+}
+nav .nav-items {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+  gap: 1rem;
+}
+nav .nav-items a {
+  text-decoration: none;
+  color: #f1f1f1;
+  font-size: 2.5rem;
+}
+nav .nav-items .arrow {
+  font-size: 0;
+  color: #686868;
+  transition: padding 0.3s, color 0.3s, font-size 0.3s;
+}
+nav .tag {
+  padding-top: 13rem;
+  justify-self: flex-end;
+  align-self: center;
+}
+nav .tag a {
+  color: #464646;
+  text-decoration: none;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100vw + 25rem);
+  height: 100vh;
+  transition: width 0.3s;
+}/*# sourceMappingURL=style.css.map */
